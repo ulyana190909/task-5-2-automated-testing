@@ -1,7 +1,7 @@
 package ru.netology;
 
 import com.codeborne.selenide.Condition;
-import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.exactText;
@@ -9,7 +9,8 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
 
 public class AuthTest {
-    @BeforeAll
+
+    @BeforeEach
     void setup() {
         open("http://localhost:9999");
     }
